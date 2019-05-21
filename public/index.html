@@ -4,14 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link href="gearui.css" rel="stylesheet" type="text/css">
+    <script src="./jquery.min.js"></script>
     <title>gear-ui</title>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but gear-ui doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+
+      <g-button id="aaa" name="ccc" tt="[1,2]" className="aaa">aaa</g-button>
+
+    </div>
     <!-- built files will be auto injected -->
   </body>
+  <script>
+    var p = G.$("[name='ccc']");
+    console.log(p);
+    G(function() {
+      var p = G.$("[name='ccc']");
+      p.setTest('12');
+      console.log(p);
+    });
+  </script>
 </html>

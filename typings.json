@@ -1,0 +1,8 @@
+{
+  "name": "gear-ui",
+  "dependencies": {},
+  "globalDependencies": {
+    "gearlib": "file:typings/custom/gearlib.d.ts",
+    "window": "file:typings/custom/window.d.ts"
+  }
+}
